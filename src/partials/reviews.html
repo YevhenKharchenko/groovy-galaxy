@@ -1,48 +1,99 @@
 <section class="section reviews-section" id="reviews">
-  <div class="reviews-bg-wrapper">
-    <h2 class="section-title reviews-title">User Reviews</h2>
+  <h2 class="section-title reviews-title">Reviews</h2>
+  <div class="reviews-section-wrapper">
     <div class="container reviews-container">
-      <picture>
-        <source
-          srcset="./img/reviews/reviews-bubbles-desk.png"
-          media="(min-width: 1440px)"
-          width="159"
-          height="185"
-        />
-        <source
-          srcset="./img/reviews/reviews-bubbles-mob.png"
-          width="59"
-          height="68"
-        />
-        <img
-          class="reviews-bubbles-img"
-          src="./img/reviews/reviews-bubbles-mob.png"
-          alt="Bubbles"
-          width="59"
-          height="68"
-          loading="lazy"
-        />
-      </picture>
-      <ul class="reviews-list">
-        <li class="reviews-list-item">
-          <p class="reviews-name">Sophie G.</p>
-          <p class="reviews-text">
-            “Truly relaxing and so beautiful. I love building my little island.”
-          </p>
-        </li>
-        <li class="reviews-list-item reviews-middle-item">
-          <p class="reviews-name">Daniel V.</p>
-          <p class="reviews-text">
-            “Perfect balance of challenge and chill. I play every evening!”
-          </p>
-        </li>
-        <li class="reviews-list-item">
-          <p class="reviews-name">Claire T.</p>
-          <p class="reviews-text">
-            “Feels like a vacation in my pocket. 10/10.”
-          </p>
-        </li>
-      </ul>
+      <div class="reviews-swiper-container">
+        <ul class="swiper-wrapper reviews-swiper-wrapper">
+          <li class="swiper-slide reviews-slide">
+            <img
+              class="reviews-avatar-img"
+              src="./img/reviews/reviews-leo.png"
+              alt="Avatar"
+              width="208"
+              height="180"
+              loading="lazy"
+            />
+            <h3 class="reviews-name">Leo B.</h3>
+            <p class="reviews-text">
+              “Fast-paced and fun. Reminds me of old-school DJ games.”
+            </p>
+          </li>
+          <li class="swiper-slide reviews-slide">
+            <img
+              class="reviews-avatar-img"
+              src="./img/reviews/reviews-mia.png"
+              alt="Avatar"
+              width="208"
+              height="180"
+              loading="lazy"
+            />
+            <h3 class="reviews-name">Mia L.</h3>
+            <p class="reviews-text">
+              “Perfect for music lovers. I play every day!”
+            </p>
+          </li>
+          <li class="swiper-slide reviews-slide">
+            <img
+              class="reviews-avatar-img"
+              src="./img/reviews/reviews-noah.png"
+              alt="Avatar"
+              width="208"
+              height="180"
+              loading="lazy"
+            />
+            <h3 class="reviews-name">Noah K.</h3>
+            <p class="reviews-text">
+              “Addictive and visually stunning. Best rhythm game I’ve played!”
+            </p>
+          </li>
+          <li class="swiper-slide reviews-slide">
+            <img
+              class="reviews-avatar-img"
+              src="./img/reviews/reviews-elena.png"
+              alt="Avatar"
+              width="208"
+              height="180"
+              loading="lazy"
+            />
+            <h3 class="reviews-name">Elena T.</h3>
+            <p class="reviews-text">
+              “Love the tracks and neon vibe. Super satisfying gameplay.”
+            </p>
+          </li>
+          <li class="swiper-slide reviews-slide">
+            <img
+              class="reviews-avatar-img"
+              src="./img/reviews/reviews-jordan.png"
+              alt="Avatar"
+              width="208"
+              height="180"
+              loading="lazy"
+            />
+            <h3 class="reviews-name">Jordan R.</h3>
+            <p class="reviews-text">“Beat Streak mode is 🔥🔥🔥”</p>
+          </li>
+        </ul>
+      </div>
+      <div class="controls reviews-controls">
+        <button
+          class="arrow-btn"
+          id="reviewsLeftArrow"
+          aria-label="Previous slide"
+        >
+          <svg class="arrow-icon" width="27" height="27">
+            <use href="./img/sprite.svg#icon-arrow-left"></use>
+          </svg>
+        </button>
+        <button
+          class="arrow-btn"
+          id="reviewsRightArrow"
+          aria-label="Next slide"
+        >
+          <svg class="arrow-icon" width="27" height="27">
+            <use href="./img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </section>

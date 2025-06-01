@@ -1,12 +1,12 @@
-.description-section {
-  padding-bottom: 80px;
+.download-section {
+  padding-bottom: 108px;
 
   @include media(desktop) {
-    padding-bottom: 120px;
+    padding-bottom: 153px;
   }
 }
 
-.description-text {
+.download-text {
   font-family: 'Arial', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -16,7 +16,7 @@
 
   @include media(desktop) {
     font-size: 20px;
-    max-width: 720px;
+    max-width: 403px;
     margin: 0 auto;
   }
 }

@@ -1,57 +1,106 @@
 .gallery-section {
+  padding-bottom: 80px;
+  scroll-margin-top: 300px;
+
+  @include media(desktop) {
+    padding-bottom: 120px;
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
 }
 
-.section-title {
+.gallery-title {
+  @include media(desktop) {
+  }
 }
 
 .gallery-section-wrapper {
-}
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
 
-.container {
+  @include media(desktop) {
+    max-width: 1440px;
+    // overflow: visible;
+  }
 }
 
 .gallery-container {
+  padding-left: 0;
+  padding-right: 0;
 }
 
-.gallery-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 16px;
+.gallery-swiper-container {
+  padding-top: 92px;
+  width: 115px;
+  max-width: 238px;
+  margin-left: auto;
+  margin-right: auto;
+  visibility: hidden;
 
   @include media(desktop) {
-    display: none;
+    max-width: 1440px;
+    width: 100%;
   }
 }
 
-.arrow-btn {
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 19px;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
+.gallery-swiper-container.show {
+  visibility: visible;
+}
+
+.gallery-slide {
+  transition: all 0.3s ease-in-out;
+  flex-shrink: 0;
+
+  &.swiper-slide-active {
+    transform: scale(1.4) !important;
+    z-index: 2;
+  }
 
   @include media(desktop) {
-    display: none;
+    margin-left: 20px !important;
   }
 }
 
-.arrow-icon {
-}
-
-.gallery-list-desk {
+.controls {
   display: none;
 
   @include media(desktop) {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
+    margin-top: 82px;
+    gap: 20px;
   }
 }
 
-.gallery-list-item-desk {
+.arrow-btn {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  &[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+
+    &:hover {
+      transform: none;
+    }
+  }
 }

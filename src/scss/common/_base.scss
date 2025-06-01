@@ -14,6 +14,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  background-image: url(../img/common/body-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    background-image: url(../img/common/body-bg-desk.png);
+  }
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;

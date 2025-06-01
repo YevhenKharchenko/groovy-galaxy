@@ -13,6 +13,12 @@
   }
 }
 
+.header-container {
+  @include media(desktop) {
+    padding: 0 121px;
+  }
+}
+
 .nav {
   display: flex;
   justify-content: end;

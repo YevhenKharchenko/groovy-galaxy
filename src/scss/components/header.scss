@@ -1,37 +1,25 @@
 .header {
-  background: transparent;
-  padding-top: 20px;
-  padding-bottom: 0;
+  background: #121118;
+  padding-top: 16px;
+  padding-bottom: 16px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
 }
 
 .nav {
-  background: transparent;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 
   @include media(desktop) {
-    background: #fff;
-    border-radius: 20px;
-    gap: 40px;
-    padding: 15px 110px;
-  }
-}
-
-.header-logo {
-  display: none;
-
-  @include media(desktop) {
-    display: block;
+    justify-content: start;
   }
 }
 
@@ -41,17 +29,16 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    width: 100%;
+    gap: 40px;
   }
 }
 
 .nav-list-link {
-  font-family: 'Quicksand', sans-serif;
-  font-weight: 500;
+  font-family: 'Arial', sans-serif;
+  font-weight: 400;
   font-size: 20px;
-  line-height: 1.5;
-  color: #000;
+  text-align: center;
+  color: #fff;
   transition: all 0.3s ease-in-out;
 }
 
@@ -60,8 +47,6 @@
 }
 
 .nav-btn {
-  background: #fff;
-  border-radius: 19px;
   width: 50px;
   height: 50px;
   display: flex;
@@ -74,8 +59,4 @@
 }
 
 .menu-icon {
-  stroke: #000;
-}
-
-.menu-icon-scrolled {
 }

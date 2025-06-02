@@ -32,9 +32,11 @@
   margin-left: auto;
   margin-right: auto;
   visibility: hidden;
+  min-height: 304px;
 
   @include media(desktop) {
     max-width: 1440px;
+    min-height: fit-content;
   }
 }
 

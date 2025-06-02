@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <defs>
+    <symbol id="icon-arrow-left" viewBox="0 0 31 32">
+      <path fill="#fff" d="M17.571 9.611a1.143 1.143 0 0 1 1.616 0l.198.197c.446.446.446 1.169.001 1.615l-4.277 4.286a1.144 1.144 0 0 0 0 1.615l4.277 4.286a1.143 1.143 0 0 1-.001 1.615l-.198.198a1.143 1.143 0 0 1-1.616 0l-6.098-6.098a1.143 1.143 0 0 1 0-1.616l6.098-6.098z" style="fill:var(--color1, #fff)"/>
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 31 32">
+      <path fill="#fff" d="M13.286 9.611a1.143 1.143 0 0 0-1.616 0l-.197.197a1.143 1.143 0 0 0-.001 1.615l4.277 4.286a1.144 1.144 0 0 1 0 1.615l-4.277 4.286a1.142 1.142 0 0 0 .001 1.615l.197.198c.446.446 1.17.446 1.616 0l6.098-6.098a1.143 1.143 0 0 0 0-1.616l-6.098-6.098z" style="fill:var(--color1, #fff)"/>
+    </symbol>
+    <symbol id="icon-close" viewBox="0 0 33 32">
+      <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".96" d="m12.16 20.48 8.96-8.96m0 8.96-8.96-8.96" style="stroke:var(--color1, #fff)"/>
+    </symbol>
+    <symbol id="icon-menu" viewBox="0 0 32 32">
+      <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width=".96" d="M6.667 22.667h10.667M6.667 16h18.667M14.667 9.333h10.667" style="stroke:var(--color1, #fff)"/>
+    </symbol>
+    <symbol id="icon-minus" viewBox="0 0 31 32">
+      <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.297" d="M7.784 16.391h15.568" style="stroke:var(--color1, #fff)"/>
+    </symbol>
+    <symbol id="icon-plus" viewBox="0 0 31 32">
+      <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.73" d="M7.784 16.391h15.568m-7.784 7.784V8.607" style="stroke:var(--color1, #fff)"/>
+    </symbol>
+  </defs>
+</svg>

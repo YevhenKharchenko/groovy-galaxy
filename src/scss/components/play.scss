@@ -42,12 +42,12 @@
   padding: 16px;
   width: 100%;
   max-width: 276px;
-  height: 94px;
+  min-height: 94px;
 
   @include media(desktop) {
     box-shadow: 4px 4px 2px 0 rgba(255, 255, 255, 0.25);
     max-width: 412px;
-    height: 86px;
+    min-height: 86px;
   }
 }
 

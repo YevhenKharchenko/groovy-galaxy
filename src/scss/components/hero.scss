@@ -1,17 +1,20 @@
 .hero-section {
   padding-top: 310px;
   padding-bottom: 412px;
-  background-image: url(../img/hero/hero-triangle-mob.png),
-    url(../img/hero/hero-cubes-mob.png), url(../img/hero/hero-title-bg-mob.png);
-  background-repeat: no-repeat, no-repeat, no-repeat;
-  background-position: bottom 58px center, top 64px center, top 160px center;
-  background-size: auto, auto, auto;
+  background-image: url(../img/hero/hero-right-cubes-mob.png),
+    url(../img/hero/hero-left-cubes-mob.png),
+    url(../img/hero/hero-triangle-mob.png), url(../img/hero/hero-cubes-mob.png),
+    url(../img/hero/hero-title-bg-mob.png);
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: bottom -52px right, bottom 72px left, bottom 58px center,
+    top 64px center, top 130px center;
+  background-size: auto, auto, auto, auto, auto;
   max-width: 375px;
   margin: 0 auto;
   position: relative;
 
   @include media(desktop) {
-    padding-top: 340px;
+    padding-top: 380px;
     padding-bottom: 489px;
     background-image: url(../img/hero/hero-triangle-desk.png),
       url(../img/hero/hero-cubes-desk.png),

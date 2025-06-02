@@ -1,12 +1,8 @@
 .gallery-section {
   padding-bottom: 80px;
-  scroll-margin-top: 300px;
 
   @include media(desktop) {
     padding-bottom: 120px;
-    max-width: 1440px;
-    margin: 0 auto;
-    overflow: hidden;
   }
 }
 
@@ -16,24 +12,27 @@
 }
 
 .gallery-section-wrapper {
+  padding-top: 24px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
   overflow: hidden;
 
   @include media(desktop) {
+    padding-top: 0;
     max-width: 1440px;
-    // overflow: visible;
   }
 }
 
 .gallery-container {
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
+
+  @include media(desktop) {
+    padding: 0 110px;
+  }
 }
 
 .gallery-swiper-container {
-  padding-top: 92px;
   width: 115px;
   max-width: 238px;
   margin-left: auto;
@@ -41,13 +40,23 @@
   visibility: hidden;
 
   @include media(desktop) {
-    max-width: 1440px;
-    width: 100%;
+    display: none;
   }
 }
 
 .gallery-swiper-container.show {
   visibility: visible;
+}
+
+.gallery-list-desk {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+  }
 }
 
 .gallery-slide {
@@ -65,14 +74,14 @@
 }
 
 .controls {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  gap: 16px;
 
   @include media(desktop) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 82px;
-    gap: 20px;
+    display: none;
   }
 }
 

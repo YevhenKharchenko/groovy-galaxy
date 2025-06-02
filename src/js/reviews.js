@@ -26,6 +26,7 @@ reviewsSwiper = new Swiper('.reviews-swiper-container', {
       spaceBetween: 24,
       initialSlide: 2,
       slidesPerView: 5,
+      allowTouchMove: false,
     },
   },
   on: {

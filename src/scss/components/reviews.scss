@@ -42,6 +42,11 @@
   visibility: visible;
 }
 
+.reviews-swiper-wrapper {
+  display: flex;
+  align-items: center;
+}
+
 .reviews-slide {
   box-shadow: 4px 4px 2px 0 rgba(255, 255, 255, 0.25);
   background: #17161d;
@@ -49,16 +54,25 @@
   padding: 16px;
   width: 100%;
   max-width: 240px;
-  height: 300px !important;
   display: flex !important;
   flex-direction: column;
 
   @include media(desktop) {
-    height: 320px !important;
+    min-height: 155px !important;
   }
 }
 
 .reviews-avatar-img {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 0;
+}
+
+.swiper-slide-active .reviews-avatar-img {
+  height: 180px;
+  opacity: 1;
   margin-bottom: 8px;
 }
 
